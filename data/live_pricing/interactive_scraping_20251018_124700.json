@@ -1,0 +1,18 @@
+[
+  {
+    "company": "Roadsurfer",
+    "timestamp": "2025-10-18T12:44:26.080428",
+    "currency": "EUR",
+    "prices": [],
+    "success": false,
+    "error": "No prices found after form submission"
+  },
+  {
+    "company": "McRent",
+    "timestamp": "2025-10-18T12:46:45.150987",
+    "currency": "EUR",
+    "prices": [],
+    "success": false,
+    "error": "No prices found after form submission"
+  }
+]

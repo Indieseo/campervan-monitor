@@ -1,0 +1,80 @@
+{
+  "timestamp": "2025-10-15T22:05:21.856940",
+  "overall_status": "critical",
+  "checks": {
+    "database": {
+      "name": "Database",
+      "status": "healthy",
+      "message": "Database operational with 126 price records",
+      "details": {
+        "path": "C:\\Projects\\campervan-monitor\\database\\campervan_intelligence.db",
+        "size_mb": 0.1015625,
+        "price_records": 126,
+        "alerts": 20
+      }
+    },
+    "scraping": {
+      "name": "Scraping Activity",
+      "status": "healthy",
+      "message": "Recent scraping activity (0.1h ago)",
+      "details": {
+        "last_scrape": "2025-10-15T21:59:22.459393",
+        "hours_since": 0.1,
+        "recent_companies": 25,
+        "latest_company": "Cruise America"
+      }
+    },
+    "data_freshness": {
+      "name": "Data Freshness",
+      "status": "critical",
+      "message": "Data quality poor (35.4% complete)",
+      "details": {
+        "records_last_7_days": 126,
+        "avg_completeness": 35.4,
+        "companies_tracked": 9
+      }
+    },
+    "alerts": {
+      "name": "Alert System",
+      "status": "warning",
+      "message": "20 critical alerts require attention",
+      "details": {
+        "active_alerts": 20,
+        "critical_alerts": 20,
+        "alert_system_configured": false
+      }
+    },
+    "disk_space": {
+      "name": "Disk Space",
+      "status": "healthy",
+      "message": "1650.7 GB free (88.6%)",
+      "details": {
+        "total_gb": 1862.1,
+        "used_gb": 211.4,
+        "free_gb": 1650.7,
+        "percent_free": 88.6
+      }
+    },
+    "configuration": {
+      "name": "Configuration",
+      "status": "healthy",
+      "message": "Configuration is valid",
+      "details": {
+        "browserless_configured": true,
+        "email_alerts_enabled": false,
+        "slack_alerts_enabled": false
+      }
+    }
+  },
+  "summary": {
+    "total_checks": 6,
+    "healthy": 4,
+    "warnings": 1,
+    "critical": 1,
+    "unknown": 0
+  },
+  "recommendations": [
+    "\ud83d\udcca Data is stale - run scrapers immediately",
+    "\ud83d\udea8 Review and acknowledge critical alerts in dashboard"
+  ]
+}

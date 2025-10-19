@@ -1,0 +1,200 @@
+# Campervan Monitor Configuration
+# Advanced settings and competitor tiers
+
+# ========================================
+# SCRAPING TIERS
+# ========================================
+tiers:
+  tier1:
+    name: "Critical Competitors"
+    frequency: "daily"
+    priority: "high"
+    companies:
+      - "Roadsurfer"
+      - "McRent"
+      - "Camperdays"
+      - "Goboony"
+      - "Yescapa"
+    
+  tier2:
+    name: "Important Competitors"
+    frequency: "weekly"
+    priority: "medium"
+    companies:
+      - "Campanda"
+      - "Motorhome Republic"
+      - "Sun Living"
+      - "Bunk Campers"
+      - "Touring Cars"
+    
+  tier3:
+    name: "Secondary Competitors"
+    frequency: "monthly"
+    priority: "low"
+    companies:
+      - "Spaceship"
+      - "Apollo"
+      - "Jucy"
+      - "Wild Campers"
+      - "CamperBoys"
+
+# ========================================
+# ALERT THRESHOLDS
+# ========================================
+alerts:
+  price_drop:
+    threshold_percentage: 10
+    severity: "HIGH"
+    action: "Review pricing strategy immediately"
+    
+  price_spike:
+    threshold_percentage: 15
+    severity: "MEDIUM"
+    action: "Monitor market conditions"
+    
+  new_competitor:
+    severity: "MEDIUM"
+    action: "Analyze new entrant strategy"
+    
+  market_shift:
+    threshold_change: 5
+    severity: "HIGH"
+    action: "Convene pricing meeting"
+
+# ========================================
+# EXPORT SETTINGS
+# ========================================
+exports:
+  excel:
+    enabled: true
+    sheets:
+      - "Summary"
+      - "Raw Data"
+      - "Price Trends"
+      - "Competitor Analysis"
+    
+  pdf:
+    enabled: true
+    include_charts: true
+    template: "executive"
+    
+  csv:
+    enabled: true
+    delimiter: ","
+    
+  schedule:
+    daily: true
+    weekly: true
+    monthly: true
+
+# ========================================
+# DATA QUALITY RULES
+# ========================================
+quality:
+  validation:
+    min_price: 20
+    max_price: 500
+    max_discount: 90
+    required_fields:
+      - "company_name"
+      - "base_price"
+  
+  cleaning:
+    auto_remove_duplicates: true
+    auto_fix_anomalies: false
+    retention_days: 90
+  
+  scoring:
+    freshness_weight: 0.4
+    completeness_weight: 0.3
+    validity_weight: 0.3
+
+# ========================================
+# RESILIENCE SETTINGS
+# ========================================
+resilience:
+  retry:
+    max_attempts: 3
+    backoff_multiplier: 2
+    initial_delay: 30
+    
+  circuit_breaker:
+    failure_threshold: 5
+    timeout_seconds: 300
+    
+  fallback:
+    use_cache: true
+    cache_ttl: 86400
+    use_database: true
+    use_estimates: false
+
+# ========================================
+# MONITORING & HEALTH
+# ========================================
+monitoring:
+  health_check_interval: 3600
+  auto_cleanup: true
+  log_retention_days: 30
+  
+  metrics:
+    - "scraping_success_rate"
+    - "data_freshness"
+    - "alert_frequency"
+    - "system_uptime"
+
+# ========================================
+# DASHBOARD SETTINGS
+# ========================================
+dashboard:
+  refresh_interval: 300
+  default_days: 30
+  charts:
+    - "price_distribution"
+    - "trend_lines"
+    - "market_position"
+    - "alert_timeline"
+  
+  features:
+    enable_export: true
+    enable_filters: true
+    enable_drill_down: true
+    enable_predictions: false
+
+# ========================================
+# NOTIFICATION CHANNELS
+# ========================================
+notifications:
+  email:
+    critical_only: false
+    daily_summary: true
+    weekly_report: true
+    
+  slack:
+    critical_only: true
+    use_threads: true
+    mention_users: []
+    
+  sms:
+    critical_only: true
+    quiet_hours:
+      start: "22:00"
+      end: "07:00"
+
+# ========================================
+# ADVANCED FEATURES
+# ========================================
+advanced:
+  machine_learning:
+    enable_predictions: false
+    model_type: "moving_average"
+    prediction_days: 7
+    
+  api:
+    enable_rest_api: false
+    port: 8000
+    require_auth: true
+    
+  integrations:
+    google_sheets: false
+    power_bi: false
+    tableau: false

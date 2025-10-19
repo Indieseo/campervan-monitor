@@ -1,0 +1,17 @@
+# Core Dependencies - Cross-platform compatible
+playwright==1.45.0
+pandas==2.2.0
+streamlit==1.32.0
+plotly==5.18.0
+python-dotenv==1.0.0
+aiohttp==3.9.3
+sqlalchemy==2.0.25
+loguru==0.7.2
+
+# Database
+alembic==1.13.1
+
+# Development (Windows)
+colorama==0.4.6
+pytest==8.0.0
+black==24.1.0

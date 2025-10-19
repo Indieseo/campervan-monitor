@@ -1,0 +1,17 @@
+{
+  "company": "Roadsurfer",
+  "timestamp": "2025-10-18T13:35:51.854846",
+  "success": false,
+  "total_prices": 0,
+  "successful_searches": 0,
+  "total_searches": 6,
+  "prices": [],
+  "locations_tested": [
+    "Munich, Germany",
+    "Berlin, Germany",
+    "Hamburg, Germany",
+    "Frankfurt, Germany",
+    "Los Angeles",
+    "San Francisco"
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "company": "McRent",
+    "success": false,
+    "total_prices": 0,
+    "successful_urls": [],
+    "failed_urls": [
+      "https://mcrent.com/",
+      "https://www.mcrent.com/en/",
+      "https://mcrent.de/en/motorhome-rental/",
+      "https://www.mcrent.de/de/",
+      "https://mcrent.de/"
+    ],
+    "prices": [],
+    "vehicles": [],
+    "currency": "EUR",
+    "timestamp": "2025-10-18T13:46:41.912060"
+  },
+  {
+    "company": "Yescapa",
+    "success": true,
+    "total_prices": 1,
+    "successful_urls": [
+      "https://www.yescapa.com/en/",
+      "https://www.yescapa.com/de/"
+    ],
+    "failed_urls": [
+      "https://www.yescapa.com/"
+    ],
+    "prices": [
+      42.0
+    ],
+    "vehicles": [],
+    "currency": "EUR",
+    "timestamp": "2025-10-18T13:47:24.219913"
+  },
+  {
+    "company": "Cruise America",
+    "success": true,
+    "total_prices": 1,
+    "successful_urls": [
+      "https://www.cruiseamerica.com/"
+    ],
+    "failed_urls": [
+      "https://www.cruiseamerica.com/rv-rental-locations/california/los-angeles-rv-rental"
+    ],
+    "prices": [
+      500.0
+    ],
+    "vehicles": [],
+    "currency": "USD",
+    "timestamp": "2025-10-18T13:48:05.739052"
+  }
+]

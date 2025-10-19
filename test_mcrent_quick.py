@@ -1,0 +1,1 @@
+import asyncio; from scrapers.tier1_scrapers import McRentScraper; scraper = McRentScraper(use_browserless=False); data = asyncio.run(scraper.scrape()); print(f"\nMcRent Results:\nPrice: {data[\"base_nightly_rate\"]}\nReviews: {data[\"customer_review_avg\"]}\nLocations: {len(data[\"locations_available\"])}\nCompleteness: {data[\"data_completeness_pct\"]:.1f}%")

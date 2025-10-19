@@ -1,0 +1,42 @@
+{
+  "api_calls": [
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/en/",
+      "timestamp": "2025-10-18T13:33:36.659194"
+    },
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/cgi-sys/js/simple-expand.min.js",
+      "timestamp": "2025-10-18T13:33:37.283444"
+    },
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/cgi-sys/images/x.png",
+      "timestamp": "2025-10-18T13:33:37.284442"
+    },
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/cgi-sys/images/404top_w.jpg",
+      "timestamp": "2025-10-18T13:33:37.415234"
+    },
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/cgi-sys/images/404mid.gif",
+      "timestamp": "2025-10-18T13:33:37.415234"
+    },
+    {
+      "type": "request",
+      "method": "GET",
+      "url": "https://www.mcrent.com/cgi-sys/images/404bottom.gif",
+      "timestamp": "2025-10-18T13:33:37.415234"
+    }
+  ],
+  "prices_found": [],
+  "success": false
+}

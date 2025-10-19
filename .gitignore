@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+py.typed
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Cache
+cache/
+.cache/
+
+# Screenshots and HTML dumps
+data/screenshots/
+data/html/
+
+# Temporary files
+temp_browser_profile/
+nul
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Test outputs
+test_output.txt
+test_results.txt
+quick_test_results.txt
+final_report.txt
+
+# Error logs
+error_logs/
+
+# Exports
+exports/
+
+# Benchmarks
+benchmarks/
+
+# Output
+output/
+
+# Research (optional - keep documentation)
+# research/

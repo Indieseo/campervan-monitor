@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest teststest_circuit_breaker.py -v --tb=short)",
+      "Bash(python:*)",
+      "Bash(tee:*)",
+      "Bash(timeout 30 tail -f test_results.txt)",
+      "Bash(timeout 60 tail -f quick_test_results.txt)",
+      "Bash(cat:*)",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(pip install:*)",
+      "Bash(streamlit run:*)",
+      "Bash(timeout 10 python -c \"import time; time.sleep(5)\")",
+      "Bash(timeout:*)",
+      "Bash(xcopy:*)",
+      "Bash(robocopy:*)",
+      "Bash(cmd /c:*)",
+      "Bash(rm:*)",
+      "Read(//h/campervan-monitor/**)",
+      "Bash(test:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

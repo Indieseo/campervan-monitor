@@ -1,0 +1,12 @@
+{
+  "company": "Roadsurfer",
+  "timestamp": "2025-10-18T13:37:35.826599",
+  "success": false,
+  "total_prices": 0,
+  "prices": [],
+  "vehicles": [],
+  "currency": "EUR",
+  "extraction_method": "direct_homepage",
+  "page_source_length": 578903,
+  "screenshot_path": "data/screenshots/roadsurfer_direct_extraction_20251018_133734.png"
+}

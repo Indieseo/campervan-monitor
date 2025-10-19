@@ -1,0 +1,20 @@
+[
+  {
+    "index": 13,
+    "tag": "DIV",
+    "class": "card-camper-pricing",
+    "text": "Starting at $115 / night\n\t\t            Plus service fee"
+  },
+  {
+    "index": 14,
+    "tag": "A",
+    "class": "btn btn-primary btn-booking-with-price",
+    "text": "Starting at $115 / night"
+  },
+  {
+    "index": 15,
+    "tag": "SPAN",
+    "class": "price",
+    "text": "$115"
+  }
+]
